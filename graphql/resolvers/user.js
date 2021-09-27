@@ -40,7 +40,7 @@ module.exports = {
       if (!valid) throw new UserInputError("Errors", { errors });
 
       //  make sure user doesn't exist
-      const user = User.findOne({ username });
+      const user = await User.findOne({ username });
       if (user)
         throw new UserInputError("Username is taken", {
           errors: {
