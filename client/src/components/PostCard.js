@@ -9,8 +9,8 @@ const PostCard = ({
   const likePost = () => console.log(`Like post`);
   const commentPost = () => console.log(`Comment post`);
   return (
-    <Card>
-      <Card.Content fluid>
+    <Card fluid>
+      <Card.Content>
         <Image
           floated="right"
           size="mini"
