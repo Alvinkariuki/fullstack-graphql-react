@@ -14,7 +14,7 @@ const generateToken = (user) => {
     {
       id: user.id,
       email: user.email,
-      username: user.email,
+      username: user.username,
     },
     SECRET_KEY,
     { expiresIn: "1h" }

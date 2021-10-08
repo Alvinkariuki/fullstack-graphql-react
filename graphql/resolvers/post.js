@@ -28,8 +28,7 @@ module.exports = {
     async createPost(_, { body }, ctx) {
       const user = checkAuth(ctx);
 
-      if (args.body.trim() === "")
-        throw new Error("Post body must not be empty");
+      if (body.trim() === "") throw new Error("Post body must not be empty");
 
       const newPost = new Post({
         body,
