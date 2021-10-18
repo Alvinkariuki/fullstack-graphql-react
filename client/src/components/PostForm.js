@@ -27,7 +27,7 @@ function PostForm() {
     },
 
     onError(error) {
-      console.log(error);
+      //console.log(error);
     },
   });
 
